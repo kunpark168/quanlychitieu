@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:theme="@style/Account"
+    android:weightSum="12"
+    android:background="#eeeeee"
+    tools:context=".activity.CreateNoteActivity">
+
+    <LinearLayout
+        android:background="@color/colorNavigation"
+        android:layout_weight="1"
+        android:weightSum="10"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <ImageView
+            android:id="@+id/imgBackAN"
+            android:padding="5dp"
+            android:src="@drawable/ic_back"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+        <TextView
+            android:gravity="center_vertical"
+            android:textSize="17sp"
+            android:textColor="@android:color/white"
+            android:text="Thêm chi tiêu"
+            android:layout_weight="9"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+    <LinearLayout
+        android:weightSum="10"
+        android:orientation="vertical"
+        android:layout_weight="10"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <RadioGroup
+            android:id="@+id/rdgCN"
+            android:layout_marginTop="20dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+            <RadioButton
+                android:id="@+id/rdCodinh"
+                android:text="Cố định"
+                android:checked="true"
+                android:layout_marginLeft="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+            <RadioButton
+                android:id="@+id/rbDoXuat"
+                android:layout_gravity="right"
+                android:text="Đột xuất"
+                android:layout_marginLeft="120dp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+        </RadioGroup>
+
+        <android.support.v7.widget.AppCompatSpinner
+            android:id="@+id/spinnerDanhMuc"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/bg_spinner"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+        </android.support.v7.widget.AppCompatSpinner>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+            <TextView
+                android:textSize="17sp"
+                android:textColor="@android:color/black"
+                android:gravity="center"
+                android:text="Số tiền : "
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+            <EditText
+                android:id="@+id/edtAmountCN"
+                android:inputType="numberDecimal"
+                android:gravity="center_vertical"
+                android:paddingLeft="20dp"
+                android:textSize="15sp"
+                android:hint="10 = 10.000 vnd"
+                android:background="@android:color/transparent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+            <TextView
+                android:textSize="17sp"
+                android:textColor="@android:color/black"
+                android:gravity="center"
+                android:text="Ngày : "
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+            <TextView
+                android:id="@+id/txtDateCN"
+                android:inputType="numberDecimal"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="20dp"
+                android:textSize="15sp"
+                android:text=". . / . . / . . /"
+                android:textColor="@android:color/black"
+                android:background="@android:color/transparent"
+                android:layout_width="100dp"
+                android:layout_height="match_parent" />
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <Button
+                    android:id="@+id/btnChooseDateCN"
+                    android:layout_gravity="right"
+                    android:text="Choose"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" />
+            </FrameLayout>
+        </LinearLayout>
+
+        <TextView
+            android:textSize="15sp"
+            android:gravity="center"
+            android:textColor="@android:color/black"
+            android:text="Ghi chú"
+            android:layout_marginTop="20dp"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp" />
+        <LinearLayout
+            android:id="@+id/layoutGhichu"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/bg_big_edt"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_weight="5"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+            <EditText
+                android:id="@+id/edtNote"
+                android:textColor="@android:color/black"
+                android:textSize="15sp"
+               android:paddingTop="10dp"
+                android:paddingLeft="10dp"
+                android:gravity="top"
+                android:hint="Ghi chú"
+                android:background="@android:color/transparent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/txtAddNote"
+        android:textSize="15sp"
+        android:textColor="@android:color/white"
+        android:gravity="center"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:text="Lưu lại"
+        android:background="@color/colorNavigation"
+        android:layout_marginBottom="20dp"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp" />
+</LinearLayout>

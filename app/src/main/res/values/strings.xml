@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Quan ly chi tieu</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="tab_1">Tài chính</string>
+    <string name="tab_2">Chi tiêu</string>
+    <string name="tab_3">Kế hoạch</string>
+    <string name="tab_4">Tài khoản</string>
+
+    <string-array name="arrCategory">
+        <item>Tiền nhà</item>
+        <item>Tiền điện</item>
+        <item>Tiền mạng</item>
+        <item>Ăn uống</item>
+    </string-array>
+</resources>

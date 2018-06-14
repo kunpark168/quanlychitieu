@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".fragment.AccountFragment">
+
+
+    <LinearLayout
+        android:paddingLeft="10dp"
+        android:weightSum="10"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <ImageView
+            android:padding="10dp"
+            android:src="@drawable/ic_account"
+            android:layout_weight="1.5"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_weight="8"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+            <TextView
+                android:textColor="@color/colorGray"
+                android:gravity="center_vertical"
+                android:text="Tài khoản : "
+                android:textSize="15sp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+            <TextView
+                android:id="@+id/txtEmailUser"
+                android:textColor="@color/colorText"
+                android:gravity="center_vertical"
+                android:text="pikakun19@gmail.com"
+                android:textSize="16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:paddingLeft="10dp"
+        android:weightSum="10"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <ImageView
+            android:padding="10dp"
+            android:src="@drawable/ic_password"
+            android:layout_weight="1.5"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+        <TextView
+            android:id="@+id/txtPasswordSetting"
+            android:gravity="center_vertical"
+            android:text="Thiết lập mật khẩu"
+            android:textSize="15sp"
+            android:textColor="@color/colorGray"
+            android:layout_weight="8.5"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:paddingLeft="10dp"
+        android:weightSum="10"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <ImageView
+            android:padding="15dp"
+            android:src="@drawable/ic_logout"
+            android:layout_weight="1.5"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+        <TextView
+            android:id="@+id/txtLogout"
+            android:gravity="center_vertical"
+            android:text="Đăng xuất"
+            android:textSize="15sp"
+            android:textColor="@android:color/holo_red_dark"
+            android:layout_weight="8.5"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+    
+    <TextView
+        android:background="@color/colorNavigation"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:textSize="17sp"
+        android:textColor="@android:color/white"
+        android:gravity="center"
+        android:text="Thống kê"
+        android:layout_width="match_parent"
+        android:layout_height="40dp" />
+    
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:paddingLeft="40dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <TextView
+            android:gravity="center"
+            android:textSize="15sp"
+            android:textColor="@android:color/black"
+            android:text="Tổng thu : "
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+        <TextView
+            android:id="@+id/txtTongThu"
+            android:paddingLeft="50dp"
+            android:gravity="center_vertical"
+            android:text="0 vnd"
+            android:textSize="15sp"
+            android:textColor="@android:color/holo_red_dark"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:paddingLeft="40dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <TextView
+            android:gravity="center"
+            android:textSize="15sp"
+            android:textColor="@android:color/black"
+            android:text="Tổng chi : "
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+        <TextView
+            android:id="@+id/txtTongChi"
+            android:paddingLeft="50dp"
+            android:gravity="center_vertical"
+            android:text="0 vnd"
+            android:textSize="15sp"
+            android:textColor="@android:color/holo_red_dark"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginLeft="40dp"
+        android:background="@android:color/black"
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+
+    <LinearLayout
+        android:paddingLeft="40dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <TextView
+            android:gravity="center"
+            android:textSize="15sp"
+            android:textColor="@android:color/black"
+            android:text="Số dư : "
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+        <TextView
+            android:id="@+id/txtSodu"
+            android:paddingLeft="70dp"
+            android:gravity="center_vertical"
+            android:text="0 vnd"
+            android:textSize="15sp"
+            android:textColor="@android:color/holo_red_dark"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+</LinearLayout>

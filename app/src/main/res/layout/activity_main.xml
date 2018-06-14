@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:theme="@style/Account"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="11"
+    tools:context=".activity.MainActivity">
+
+    <TextView
+        android:id="@+id/txtHeader"
+        android:textSize="17sp"
+        android:gravity="center_vertical"
+        android:paddingLeft="20dp"
+        android:textColor="@color/colorWhite"
+        android:text="Tài khoản"
+        android:background="@color/colorNavigation"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/mViewPager"
+        android:layout_weight="9"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+    </android.support.v4.view.ViewPager>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:weightSum="4"
+        android:background="@color/colorNavigation"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <LinearLayout
+            android:id="@+id/layoutTaichinh"
+            android:weightSum="2"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+            <FrameLayout
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp">
+                <ImageView
+                    android:id="@+id/imgTaichinh"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_money_unacitive"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </FrameLayout>
+            <TextView
+                android:id="@+id/txtTaichinh"
+                android:gravity="center_horizontal"
+                android:textColor="@color/colorUnactive"
+                android:text="@string/tab_1"
+                android:layout_weight="1"
+                android:textSize="12sp"
+                android:layout_width="match_parent"
+                android:layout_height="0dp" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/layoutChitieu"
+            android:weightSum="2"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+            <FrameLayout
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp">
+                <ImageView
+                    android:id="@+id/imgChitieu"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_spend_unactive"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </FrameLayout>
+            <TextView
+                android:id="@+id/txtChitieu"
+                android:textSize="12sp"
+                android:gravity="center_horizontal"
+                android:textColor="@color/colorUnactive"
+                android:text="@string/tab_2"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/layoutKehoach"
+            android:weightSum="2"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+            <FrameLayout
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp">
+                <ImageView
+                    android:id="@+id/imgKehoach"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_plan_unactive"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </FrameLayout>
+            <TextView
+                android:id="@+id/txtKehoach"
+                android:textSize="12sp"
+                android:gravity="center_horizontal"
+                android:textColor="@color/colorUnactive"
+                android:text="@string/tab_3"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/layoutTaikhoan"
+            android:background="@color/colorActive"
+            android:weightSum="2"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+            <FrameLayout
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp">
+                <ImageView
+                    android:id="@+id/imgTaikhoan"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_acc_active"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </FrameLayout>
+            <TextView
+                android:id="@+id/txtTaikhoan"
+                android:textSize="12sp"
+                android:gravity="center_horizontal"
+                android:textColor="@color/colorWhite"
+                android:text="@string/tab_4"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:orientation="vertical"
+    android:background="@android:color/black"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:background="@color/colorNavigation"
+        android:textSize="17sp"
+        android:textColor="@android:color/white"
+        android:gravity="center"
+        android:text="Change your password"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp50" />
+    <EditText
+        android:id="@+id/edtNewPassword"
+        android:textSize="15sp"
+        android:gravity="center"
+        android:inputType="textPassword"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/white"
+        android:hint="New password"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/bg_edt"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp50" />
+    <EditText
+        android:id="@+id/edtConfirmNewPassword"
+        android:gravity="center"
+        android:inputType="textPassword"
+        android:textSize="15sp"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/white"
+        android:hint="Confirm password"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/bg_edt"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp50" />
+
+    <LinearLayout
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp50">
+        <TextView
+            android:id="@+id/txtCancleCP"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:textColor="@android:color/white"
+            android:text="Cancle"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bg_btn"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+        <TextView
+            android:id="@+id/txtSaveCP"
+            android:textSize="16sp"
+            android:textColor="@android:color/white"
+            android:text="Save"
+            android:gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bg_btn"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+</LinearLayout>
